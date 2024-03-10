@@ -13,7 +13,7 @@ const Header = () => {
           <img
             src={logoUnsij}
             alt="Logotipo universidad"
-            className="h-20 w-auto"
+            className="h-20 w-auto bg-unsij_white p-2 rounded-full"
           />
           <h1 className="md:text-2xl hidden md:inline font-[800] mx-4 text-center text-white uppercase">
             Universidad de la Sierra Juárez

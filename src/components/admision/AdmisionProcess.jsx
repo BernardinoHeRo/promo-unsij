@@ -31,7 +31,7 @@ const AdmisionProcess = ({processType}) => {
                 }
             },
             {
-                title: (<h1 className="mt4 text-2xl md:text-3xl lg:text-4xl font-bold">Recolección de documentos</h1>),
+                title: (<h1 className="mt4 text-2xl md:text-3xl lg:text-4xl font-bold">Documentos requeridos (físicos y escaneados)</h1>),
                 description: {
                     1: (<p className="text-lg md:text-2xl lg:text-3xl">1 copia del acta de nacimiento.</p>),
                     2: (<p className="text-lg md:text-2xl lg:text-3xl">1 copia del certificado de secundaria.</p>),
@@ -41,34 +41,59 @@ const AdmisionProcess = ({processType}) => {
                     5: (<p className="text-lg md:text-2xl lg:text-3xl">6 fotografías tamaño infantil b/n en papel
                         mate.</p>),
                     6: (<p className="text-lg md:text-2xl lg:text-3xl flex flex-col text-center">Original del
-                        comprobante de pago de ficha
-                        <strong>
-                            (Realiza el pago
-                            <a className="pl-2 cursor-pointer text-blue-600 text-2xl md:text-3xl"
-                               href="https://siox.finanzasoaxaca.gob.mx/pagos"
-                               target="_blank"
-                               rel="noopener noreferrer"
-                            >
-                                en este enlace
-                            </a>)
-                        </strong>.
+                        comprobante de pago de ficha.</p>),
+                    7: (<p className="text-lg md:text-2xl lg:text-3xl">Realiza el pago de ficha:
+                        <a className="pl-2 cursor-pointer text-blue-600 text-lg md:text-2xl lg:text-3xl underline"
+                           href="https://siox.finanzasoaxaca.gob.mx/pagos"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Aquí
+                        </a>
                     </p>),
+                    8: (<p className="text-lg md:text-2xl lg:text-3xl">
+                            Ver el manual de pago de ficha:
+                            <a
+                                className="pl-2 cursor-pointer text-blue-600 text-lg md:text-2xl lg:text-3xl underline"
+                                href="/lineaDeCaptura.pdf"
+                                target="_blank"
+                            >
+                                Aquí
+                            </a>
+                        </p>
+                    ),
                 }
             },
             {
-                title: "Ficha escolar",
+                title: (<h1 className="mt4 text-2xl md:text-3xl lg:text-4xl font-bold">Tramite de ficha escolar</h1>),
                 description: {
-                    1: "Pago de ficha escolar:",
-                    2: (
-                        <a
-                            className="inline-block text-blue-500 sm:text-sm md:text-xl lg:text-lg xl:text-xl"
-                            href="https://siox.finanzasoaxaca.gob.mx/pagos"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Finanzas Oaxaca
+                    1: (<p className="text-lg md:text-2xl lg:text-3xl">Ingresa al sitio para registro:
+                        <a className="pl-2 cursor-pointer text-blue-600 text-lg md:text-2xl lg:text-3xl underline"
+                           href="https://inscripciones.unsij.edu.mx/login"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Aquí
                         </a>
-                    ),
+                    </p>),
+                    2: (<p className="text-lg md:text-2xl lg:text-3xl">Ver el manual de tramite de ficha:
+                        <a
+                            className="pl-2 cursor-pointer text-blue-600 text-lg md:text-2xl lg:text-3xl underline"
+                            href="/fichaEscolar.pdf"
+                            target="_blank"
+                        >
+                            Aquí
+                        </a>
+                    </p>),
+                    3: (<p>
+                        <strong className="text-lg md:text-2xl lg:text-3xl">Nota:</strong>
+                        <span className="text-lg md:text-2xl lg:text-3xl pl-2">
+                            Ten a la mano tus documentos, se necesitan los siguientes datos:
+                        <ul className="mt-2">
+                            <li><strong className="text-center text-red-800">*</strong> CURP</li>
+                            <li><strong className="text-center text-red-800">*</strong> Dirección de correo electrónico personal</li>
+                            <li><strong className="text-center text-red-800">*</strong> Una contraseña</li>
+                        </ul>
+                        </span>
+                    </p>),
                 }
             },
             {
