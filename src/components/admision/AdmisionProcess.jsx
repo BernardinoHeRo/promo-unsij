@@ -10,7 +10,8 @@ const AdmisionProcess = ({processType}) => {
     const getStepsData = () => {
         const licenciaturaSteps = [
             {
-                title: (<h1 className="mt-4 text-2xl md:text-3xl lg:text-4xl font-bold">Verificar fechas importantes</h1>),
+                title: (
+                    <h1 className="mt-4 text-2xl md:text-3xl lg:text-4xl font-bold">Verificar fechas importantes</h1>),
                 description: {
                     tokenDelivery: (<p className="text-lg md:text-2xl lg:text-3xl flex flex-col"><strong
                         className='text-lg md:text-2xl lg:text-3xl'>Entrega de fichas:</strong> Del 16 de febrero al 26
@@ -61,7 +62,7 @@ const AdmisionProcess = ({processType}) => {
                             </a>
                         </p>
                     ),
-                    9:(<p className="text-lg md:text-2xl lg:text-3xl">
+                    9: (<p className="text-lg md:text-2xl lg:text-3xl">
                         <strong className="text-red-800 pr-2">*</strong>
                         Los documentos deben ser escaneados si hará el trámite en línea
                     </p>)
@@ -140,14 +141,41 @@ const AdmisionProcess = ({processType}) => {
                 }
             },
             {
-                title: (<h1>Examen de admisión</h1>),
+                title: (<h1 className="mt4 text-2xl md:text-3xl lg:text-4xl font-bold">Examen de admisión</h1>),
                 description: {
-                    1: "hola",
+                    1: (<div>
+                        <p className="text-lg md:text-2xl lg:text-3xl">
+                            El examen de admisión se presentará en el lugar y fecha indicado el día del tramite de
+                            ficha.
+                        </p>
+                        <p className="text-lg md:text-2xl lg:text-3xl">
+                            <strong className="text-center text-red-800 mr-2">
+                                *
+                            </strong>
+                            Las fechas para presentar el examen de admisión son:
+                            <ul className="mt-2 flex flex-col gap-4 text-black">
+                                <li> 25 de mayo del 2024.</li>
+                                <li> 01 de julio del año 2024.</li>
+                            </ul>
+                        </p>
+                    </div>),
                 },
             },
             {
-                title: "Paso 5 para Licenciaturas",
-                description: "Descripción para el Paso 1 de Licenciaturas",
+                title:(<h1 className="mt4 text-2xl md:text-3xl lg:text-4xl font-bold">Curso propedéutico</h1>),
+                description: {
+                    0: (<h1 className="text-xl font-bold md:text-3xl text-unsij_fisrt">Inscripción</h1>),
+                    1:(<div className="bg-unsij_third rounded-3xl p-4">
+                        <p className="text-lg md:text-2xl lg:text-3xl text-black">Realizar el trámite correspondiente en las instalaciones de la Universidad de la Sierra Juárez</p>
+                        <p className="mt-2 text-lg md:text-2xl lg:text-3xl text-black">Del 15 de julio al 26 de julio del 2024.</p>
+                    </div>),
+                    2: (<h1 className="text-xl font-bold md:text-3xl text-unsij_fisrt">Curso</h1>),
+                    3:(<div className="bg-unsij_third rounded-3xl p-4">
+                        <p className="text-lg md:text-2xl lg:text-3xl text-black">El curso propedéutico se realiza de
+                            manera presencial</p>
+                        <p className=" mt-2 text-lg md:text-2xl lg:text-3xl text-black">Del 29 de julio del 2024 al 20 de septiembre del 2024.</p>
+                    </div>)
+                },
             },
         ];
 
