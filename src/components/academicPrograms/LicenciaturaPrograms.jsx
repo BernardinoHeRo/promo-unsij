@@ -90,7 +90,7 @@ const LicenciaturaPrograms = () => {
 
         // Limpiar el intervalo al desmontar el componente
         return () => clearInterval(intervalId);
-    }, [autoScroll, currentProgramIndex, visiblePrograms]);
+    }, [autoScroll, handleNextProgram, currentProgramIndex, visiblePrograms]);
 
     // Manejar eventos de entrada y salida del ratón para detener el recorrido automático
     const handleMouseEnter = () => {
