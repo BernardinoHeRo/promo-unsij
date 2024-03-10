@@ -10,7 +10,7 @@ const AdmisionProcess = ({processType}) => {
     const getStepsData = () => {
         const licenciaturaSteps = [
             {
-                title: (<h1 className="mt-4 text-2xl md:text-3xl lg:text-4xl font-bold">Fechas importantes</h1>),
+                title: (<h1 className="mt-4 text-2xl md:text-3xl lg:text-4xl font-bold">Verificar fechas importantes</h1>),
                 description: {
                     tokenDelivery: (<p className="text-lg md:text-2xl lg:text-3xl flex flex-col"><strong
                         className='text-lg md:text-2xl lg:text-3xl'>Entrega de fichas:</strong> Del 16 de febrero al 26
@@ -31,7 +31,7 @@ const AdmisionProcess = ({processType}) => {
                 }
             },
             {
-                title: (<h1 className="mt4 text-2xl md:text-3xl lg:text-4xl font-bold">Documentos requeridos (físicos y escaneados)</h1>),
+                title: (<h1 className="mt4 text-2xl md:text-3xl lg:text-4xl font-bold">Reunir documentación</h1>),
                 description: {
                     1: (<p className="text-lg md:text-2xl lg:text-3xl">1 copia del acta de nacimiento.</p>),
                     2: (<p className="text-lg md:text-2xl lg:text-3xl">1 copia del certificado de secundaria.</p>),
@@ -40,7 +40,7 @@ const AdmisionProcess = ({processType}) => {
                     4: (<p className="text-lg md:text-2xl lg:text-3xl">1 copia de la CURP.</p>),
                     5: (<p className="text-lg md:text-2xl lg:text-3xl">6 fotografías tamaño infantil b/n en papel
                         mate.</p>),
-                    6: (<p className="text-lg md:text-2xl lg:text-3xl flex flex-col text-center">Original del
+                    6: (<p className="text-lg md:text-2xl lg:text-3xl flex flex-col text-center">Original y copia del
                         comprobante de pago de ficha.</p>),
                     7: (<p className="text-lg md:text-2xl lg:text-3xl">Realiza el pago de ficha:
                         <a className="pl-2 cursor-pointer text-blue-600 text-lg md:text-2xl lg:text-3xl underline"
@@ -61,44 +61,89 @@ const AdmisionProcess = ({processType}) => {
                             </a>
                         </p>
                     ),
+                    9:(<p className="text-lg md:text-2xl lg:text-3xl">
+                        <strong className="text-red-800 pr-2">*</strong>
+                        Los documentos deben ser escaneados si hará el trámite en línea
+                    </p>)
                 }
             },
             {
                 title: (<h1 className="mt4 text-2xl md:text-3xl lg:text-4xl font-bold">Tramite de ficha escolar</h1>),
                 description: {
-                    1: (<p className="text-lg md:text-2xl lg:text-3xl">Ingresa al sitio para registro:
-                        <a className="pl-2 cursor-pointer text-blue-600 text-lg md:text-2xl lg:text-3xl underline"
-                           href="https://inscripciones.unsij.edu.mx/login"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            Aquí
-                        </a>
-                    </p>),
-                    2: (<p className="text-lg md:text-2xl lg:text-3xl">Ver el manual de tramite de ficha:
-                        <a
-                            className="pl-2 cursor-pointer text-blue-600 text-lg md:text-2xl lg:text-3xl underline"
-                            href="/fichaEscolar.pdf"
-                            target="_blank"
-                        >
-                            Aquí
-                        </a>
-                    </p>),
-                    3: (<p>
-                        <strong className="text-lg md:text-2xl lg:text-3xl">Nota:</strong>
-                        <span className="text-lg md:text-2xl lg:text-3xl pl-2">
-                            Ten a la mano tus documentos, se necesitan los siguientes datos:
+                    0: (<h1 className="text-xl font-bold md:text-3xl text-unsij_fisrt">Trámite físico</h1>),
+                    1: (<div className="bg-unsij_third rounded-3xl p-4 text-black">
+                        <h1 className="text-xl font-bold md:text-3xl mb-4">Entregar toda la documentación cualquiera de
+                            los
+                            siguientes lugares:</h1>
+                        <ul className="mt-2 flex flex-col gap-4 text-black">
+                            <li className="text-lg md:text-2xl lg:text-3xl">En las instalaciones de la UNSIJ, Av.
+                                Universidad S/N Ixtlán de Juárez, Oaxaca
+                            </li>
+                            <li className="text-lg md:text-2xl lg:text-3xl">Oficinas en Oaxaca, Pino Suárez 509, Col.
+                                Centro, Tel. (951) 132 69 58
+                            </li>
+                            <li className="text-lg md:text-2xl lg:text-3xl">Librería universitaria Av. 16 de septiembre
+                                s/n Planta baja de la biblioteca municipal Ixtlán de Juárez, Oaxaca
+                            </li>
+                            <li className="text-lg md:text-2xl lg:text-3xl">En cualquiera de las universidades del
+                                SUNEO: UTM, UMAR, UNISTMO, UNPA, UNSIS, UNCA, NU, UNCOS y UNICHA
+                            </li>
+                            <li className="text-lg md:text-2xl lg:text-3xl">Oficinas en la Cd. de México, ubicadas en
+                                Sacramento 347, Col. del Valle, C.P. 03100, México, D.F.
+                            </li>
+                        </ul>
+                    </div>),
+                    2: (<h1 className="text-xl font-bold md:text-3xl text-unsij_fisrt">Trámite en línea</h1>),
+                    3: (<div className="bg-unsij_third rounded-3xl p-4 text-black">
+                        <ul className="mt-2 flex flex-col gap-4 text-black">
+                            <li>
+                                <p className="text-lg md:text-2xl lg:text-3xl">Ingresa al sitio para registro:
+                                    <a className="pl-2 cursor-pointer text-blue-600 text-lg md:text-2xl lg:text-3xl underline"
+                                       href="https://inscripciones.unsij.edu.mx/login"
+                                       target="_blank"
+                                       rel="noopener noreferrer">
+                                        Aquí
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p className="text-lg md:text-2xl lg:text-3xl">Ver el manual de tramite de ficha:
+                                    <a
+                                        className="pl-2 cursor-pointer text-blue-600 text-lg md:text-2xl lg:text-3xl underline"
+                                        href="/fichaEscolar.pdf"
+                                        target="_blank"
+                                    >
+                                        Aquí
+                                    </a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong className="text-lg md:text-2xl lg:text-3xl">Nota:</strong>
+                                    <span className="text-lg md:text-2xl lg:text-3xl pl-2">
+                            Ten a la mano tus documentos, se deben adjuntar en este paso, además, se necesitan los siguientes datos:
                         <ul className="mt-2">
-                            <li><strong className="text-center text-red-800">*</strong> CURP</li>
+                            <li>
+                                <strong className="text-center text-red-800">*</strong> CURP
+                            </li>
                             <li><strong className="text-center text-red-800">*</strong> Dirección de correo electrónico personal</li>
-                            <li><strong className="text-center text-red-800">*</strong> Una contraseña</li>
+                            <li><strong
+                                className="text-center text-red-800">*</strong> Una contraseña (no la olvides)</li>
                         </ul>
                         </span>
-                    </p>),
+                                </p>
+                            </li>
+                        </ul>
+
+
+                    </div>),
                 }
             },
             {
-                title: "Paso 4 para Licenciaturas",
-                description: "Descripción para el Paso 1 de Licenciaturas",
+                title: (<h1></h1>),
+                description: {
+                    1: "hola",
+                },
             },
             {
                 title: "Paso 5 para Licenciaturas",
