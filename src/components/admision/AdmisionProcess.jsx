@@ -140,7 +140,7 @@ const AdmisionProcess = ({processType}) => {
                 }
             },
             {
-                title: (<h1></h1>),
+                title: (<h1>Examen de admisión</h1>),
                 description: {
                     1: "hola",
                 },
