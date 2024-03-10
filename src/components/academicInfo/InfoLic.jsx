@@ -7,6 +7,7 @@ import { carreras } from "../data/carreras.js";
 import { useParams } from "react-router-dom";
 
 const InfoLic = () => {
+  const [selectedTab, setSelectedTab] = useState("objetivos");
   // Get the "id" parameter from the route
   const { id } = useParams();
   // Busca la carrera correspondiente por su id
@@ -19,7 +20,7 @@ const InfoLic = () => {
   // Accede a las propiedades específicas de la carrera
   const { nombre, jefe, objetivos, perfil, campo, plan, email } = carrera;
   //console.log(id, nombre);
-  const [selectedTab, setSelectedTab] = useState("objetivos");
+
   const handleTabClick = (tab) => {
     setSelectedTab(tab);
   };
