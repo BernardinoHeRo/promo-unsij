@@ -10,6 +10,14 @@ import turisticaImage from '../../assets/images/turisticaImage.jpg';
 import {GrCaretNext, GrCaretPrevious} from "react-icons/gr";
 
 const LicenciaturaPrograms = () => {
+    // Estado para el índice de la licenciatura actual
+    const [currentProgramIndex, setCurrentProgramIndex] = useState(0);
+
+    // Estado para controlar el recorrido automático
+    const [autoScroll, setAutoScroll] = useState(true);
+
+    // Estado para determinar la cantidad de tarjetas visibles en función del tamaño de la pantalla
+    const [visiblePrograms, setVisiblePrograms] = useState(1);
     // Datos relacionados a las licenciaturas
     const programsData = [
         {
@@ -52,15 +60,6 @@ const LicenciaturaPrograms = () => {
             facebook: "https://www.facebook.com/turismoUNSIJ/",
         },
     ];
-
-    // Estado para el índice de la licenciatura actual
-    const [currentProgramIndex, setCurrentProgramIndex] = useState(0);
-
-    // Estado para controlar el recorrido automático
-    const [autoScroll, setAutoScroll] = useState(true);
-
-    // Estado para determinar la cantidad de tarjetas visibles en función del tamaño de la pantalla
-    const [visiblePrograms, setVisiblePrograms] = useState(1);
 
     // Función para avanzar a la siguiente licenciatura
     const handleNextProgram = () => {

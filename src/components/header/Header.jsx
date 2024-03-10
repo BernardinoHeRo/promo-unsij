@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { RiCloseLine, RiMenu3Fill } from "react-icons/ri";
 import logoUnsij from "../../assets/images/unsij.png";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink} from "react-scroll";
 import { Link } from "react-router-dom";
 
 const Header = () => {

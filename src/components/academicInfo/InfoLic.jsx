@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Header2 from "../header/Header2.jsx";
 import Footer from "../footer/Footer.jsx";
-import Objetive from "./partials/objetive";
-import Perfil from "./partials/Perfil";
 import { carreras } from "../data/carreras.js";
 import { useParams } from "react-router-dom";
 
@@ -18,9 +16,7 @@ const InfoLic = () => {
   }
 
   // Accede a las propiedades específicas de la carrera
-  const { nombre, jefe, objetivos, perfil, campo, plan, email } = carrera;
-  //console.log(id, nombre);
-
+  const { nombre, jefe, objetivos, perfil, campo, email } = carrera;
   const handleTabClick = (tab) => {
     setSelectedTab(tab);
   };
