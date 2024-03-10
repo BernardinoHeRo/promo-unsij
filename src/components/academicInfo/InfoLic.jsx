@@ -42,36 +42,36 @@ const InfoLic = () => {
                   selectedTab === "objetivos" ? "bg-orange-600" : ""
                 }`}
               >
-                <a href="#" onClick={() => handleTabClick("objetivos")}>
+                <span className="cursor-pointer"  onClick={() => handleTabClick("objetivos")}>
                   Información general
-                </a>
+                </span>
               </li>
               <li
                 className={`text-[12px] text-center md:text-lg  font-[400] px-3 py-2 rounded-lg text-unsij_white hover:bg-orange-600 ${
                   selectedTab === "perfil" ? "bg-orange-600" : ""
                 }`}
               >
-                <a href="#" onClick={() => handleTabClick("perfil")}>
+                <span className="cursor-pointer"  onClick={() => handleTabClick("perfil")}>
                   Perfil del egresado
-                </a>
+                </span>
               </li>
               <li
                 className={`text-[12px] text-center md:text-lg  font-[400] px-3 py-2 rounded-lg text-unsij_white hover:bg-orange-600 ${
                   selectedTab === "campo" ? "bg-orange-600" : ""
                 }`}
               >
-                <a href="#" onClick={() => handleTabClick("campo")}>
+                <span className="cursor-pointer" onClick={() => handleTabClick("campo")}>
                   Campo de acción
-                </a>
+                </span>
               </li>
               <li
                 className={`text-[12px] text-center md:text-lg font-[400] px-3 py-2 rounded-lg text-unsij_white hover:bg-orange-600 ${
                   selectedTab === "plan" ? "bg-orange-600" : ""
                 }`}
               >
-                <a href="#" onClick={() => handleTabClick("plan")}>
+                <span className="cursor-pointer" onClick={() => handleTabClick("plan")}>
                   Plan de estudios
-                </a>
+                </span>
               </li>
             </ul>
           </div>

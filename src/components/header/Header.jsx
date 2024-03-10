@@ -44,13 +44,13 @@ const Header = () => {
           Oferta educativa
         </ScrollLink>
         <a
-          href="#"
+          href="/"
           className="text-xl lg:text-2xl text-white border-b hover:border-2 px-2 rounded-lg hover:text-orange-600 font-[500]"
         >
           Becas
         </a>
         <a
-          href="#"
+          href="/"
           className="text-xl lg:text-2xl text-white border-b hover:border-2 px-2 rounded-lg hover:text-orange-600 font-[500]"
         >
           Vida universitaria
