@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import {CiCircleMore} from "react-icons/ci";
 import {FaFacebook} from "react-icons/fa";
 import {Link} from "react-router-dom";
@@ -62,11 +62,11 @@ const LicenciaturaPrograms = () => {
     ];
 
     // Función para avanzar a la siguiente licenciatura
-    const handleNextProgram = () => {
+    const handleNextProgram = useCallback(() => {
         setCurrentProgramIndex((prevIndex) =>
             prevIndex === programsData.length - visiblePrograms ? 0 : prevIndex + 1
         );
-    };
+    },[programsData.length, visiblePrograms])
 
     // Función para retroceder a la licenciatura anterior
     const handlePrevProgram = () => {
