@@ -1,5 +1,4 @@
 import React from 'react';
-import unsijLogo from "../../assets/images/unsij.png"
 import utmLogo from "../../assets/images/suneo/utm.png"
 import umarLogo from "../../assets/images/suneo/umar.png"
 import uncaLogo from "../../assets/images/suneo/unca.png"
