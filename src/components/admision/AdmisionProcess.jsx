@@ -162,19 +162,33 @@ const AdmisionProcess = ({processType}) => {
                 },
             },
             {
-                title:(<h1 className="mt4 text-2xl md:text-3xl lg:text-4xl font-bold">Curso propedéutico</h1>),
+                title: (<h1 className="mt4 text-2xl md:text-3xl lg:text-4xl font-bold">Curso propedéutico</h1>),
                 description: {
                     0: (<h1 className="text-xl font-bold md:text-3xl text-unsij_fisrt">Inscripción</h1>),
-                    1:(<div className="bg-unsij_third rounded-3xl p-4">
-                        <p className="text-lg md:text-2xl lg:text-3xl text-black">Realizar el trámite correspondiente en las instalaciones de la Universidad de la Sierra Juárez</p>
-                        <p className="mt-2 text-lg md:text-2xl lg:text-3xl text-black">Del 15 de julio al 26 de julio del 2024.</p>
+                    1: (<div className="bg-unsij_third rounded-3xl p-4">
+                        <p className="text-lg md:text-2xl lg:text-3xl text-black">Realizar el trámite correspondiente en
+                            las instalaciones de la Universidad de la Sierra Juárez</p>
+                        <p className="mt-2 text-lg md:text-2xl lg:text-3xl text-black">Del 15 de julio al 26 de julio
+                            del 2024.</p>
                     </div>),
                     2: (<h1 className="text-xl font-bold md:text-3xl text-unsij_fisrt">Curso</h1>),
-                    3:(<div className="bg-unsij_third rounded-3xl p-4">
+                    3: (<div className="bg-unsij_third rounded-3xl p-4">
                         <p className="text-lg md:text-2xl lg:text-3xl text-black">El curso propedéutico se realiza de
                             manera presencial</p>
-                        <p className=" mt-2 text-lg md:text-2xl lg:text-3xl text-black">Del 29 de julio del 2024 al 20 de septiembre del 2024.</p>
-                    </div>)
+                        <p className=" mt-2 text-lg md:text-2xl lg:text-3xl text-black">Del 29 de julio del 2024 al 20
+                            de septiembre del 2024.</p>
+                    </div>),
+                    4: (<p className="text-lg md:text-2xl lg:text-3xl">
+                            <a
+                                className="cursor-pointer text-blue-600 text-lg md:text-2xl lg:text-3xl underline"
+                                href="https://www.google.com/maps?q=17.316075202079233,-96.48332542866517"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Ubicación de la universidad
+                            </a>
+                        </p>
+                    ),
                 },
             },
         ];
@@ -187,7 +201,7 @@ const AdmisionProcess = ({processType}) => {
     return (
         <div className="bg-unsij_white h-full pb-12 rounded-b-lg">
             <div className="w-full sm:w-[90%] mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
-                <div className="flex mt-4 flex-col lg:flex-row justify-center items-center gap-8">
+                <div className="flex mt-4 flex-col lg:flex-row justify-center items-center gap-2 md:gap-4 lg:gap-8">
                     <span className="text-sm leading-7 text-gray-500 font-regular">
                         Colegiatura {" "} <strong className="font-bold text-xl md:text-3xl">GRATIS</strong>
                     </span>
