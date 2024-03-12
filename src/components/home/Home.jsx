@@ -27,7 +27,7 @@ const Home = () => {
                      className="bg-[#033F4A] flex justify-center font-Garamont">
                     <span className="pt-4 text-unsij_white font-[800] pb-3 text-2xl md:text-3xl lg:text-4xl">Oferta educativa</span>
                 </div>
-                <div className="p-4 bg-gray-300 w-[90%] mx-auto my-2 rounded-3xl">
+                <div className="p-4 bg-gray-300 w-[98%] mx-auto my-2 rounded-3xl">
                     <LicenciaturaPrograms/>
                 </div>
             </Element>

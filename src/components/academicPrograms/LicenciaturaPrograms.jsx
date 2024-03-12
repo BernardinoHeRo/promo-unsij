@@ -38,7 +38,7 @@ const LicenciaturaPrograms = () => {
         {
             id: 3,
             "infoColor": "#023E73",
-            nombre: 'Ingeniería Desarrollo de Software y Sistemas Inteligentes',
+            nombre: 'Ing. en Desarrollo de Software y Sistemas Inteligentes',
             informacion: 'Forma líderes analíticos y emprendedores capaces de desarrollar sistemas, administrar recursos informáticos y contribuir al cambio tecnológico. Únete para transformar el futuro.',
             imagen: informaticaImage,
             facebook: "https://www.facebook.com/InformaticaUNSIJ/?locale=es_LA",
@@ -133,20 +133,20 @@ const LicenciaturaPrograms = () => {
     const displayedPrograms = programsData.slice(currentProgramIndex, currentProgramIndex + visiblePrograms);
 
     return (
-        <div className="mt-20 mb-3 w-[90%] flex flex-row justify-around relative" onMouseEnter={handleMouseEnter}
+        <div className="mx-auto mt-20 mb-3 w-full flex flex-row justify-around relative" onMouseEnter={handleMouseEnter}
              onMouseLeave={handleMouseLeave}>
             {/* Flecha izquierda para retroceder */}
-            <div className="absolute left-0 top-1/4 transform -translate-y-1/2 cursor-pointer transition-transform duration-300 ease-in-out
+            <div className="absolute left-0 top-1/2 md:top-1/2 transform -translate-y-1/2 cursor-pointer transition-transform duration-300 ease-in-out
             bg-orange-600 p-2 rounded-full text-white font-bold text-3xl
-            hover:bg-orange-950" onClick={handlePrevProgram} style={{zIndex: 1}}>
+            hover:bg-orange-950 opacity-40 hover:opacity-100" onClick={handlePrevProgram} style={{zIndex: 1}}>
                 <GrCaretPrevious/>
             </div>
             {/* Mapear y mostrar las licenciaturas */}
             {displayedPrograms.map((programa, index) => (
                 <div key={programa.id}
-                     className={`mt-14 px-6 pt-16 pb-20 shadow-2xl shadow-black/[0.1] rounded-3xl flex flex-col justify-around
-                    min-w-[200px] max-w-[300px] md:max-w-[330px] 
-                    min-h-[450px] max-h-[450px] md:max-h-[500px] 
+                     className={`mt-14 px-6 pt-16 pb-20 shadow-2xl shadow-black/[0.1] rounded-3xl flex flex-col justify-between
+                    min-w-[350px] max-w-[350px] md:min-w-[350px] md:max-w-[350px] lg:min-w-[430px] lg:max-w-[430px] 
+                    min-h-[450px] max-h-[450px] md:min-h-[480px] md:max-h-[480px] lg:min-h-[450px] lg:max-h-[450px] 
                     transition-all duration-500 ease-in-out transform ${
                          index === 0 ? "translate-x-0" : `translate-x-${index * 2}0%`
                      }`} style={{backgroundColor: programa.infoColor}}>
@@ -182,9 +182,9 @@ const LicenciaturaPrograms = () => {
                 </div>
             ))}
             {/* Flecha derecha para avanzar */}
-            <div className="absolute right-0 top-1/4 transform -translate-y-1/2 cursor-pointer transition-transform duration-300 ease-in-out
+            <div className="absolute right-0 top-1/2 transform -translate-y-1/2 cursor-pointer transition-transform duration-300 ease-in-out
             bg-orange-600 p-2 rounded-full text-white font-bold text-3xl
-            hover:bg-orange-950" onClick={handleNextProgram}>
+            hover:bg-orange-950 opacity-40 hover:opacity-100" onClick={handleNextProgram}>
                 <GrCaretNext/>
             </div>
         </div>
