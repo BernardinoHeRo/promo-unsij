@@ -82,3 +82,6 @@ const Header = () => {
     );
 };
 export default Header;
+// 1366 * 768
+// Fondo gris o tarjetas blancas
+// Contacto las fuentes blancas

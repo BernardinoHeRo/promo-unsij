@@ -13,7 +13,7 @@ const Contact = () => {
       <div className="mx-auto w-full px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div className="mb-4">
           <div className="mb-6 w-full text-center sm:text-center md:mx-auto md:mb-12">
-            <h2 className="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl">
+            <h2 className="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-2xl md:text-3xl lg:text-4xl">
               Información de contacto
             </h2>
           </div>
@@ -21,9 +21,8 @@ const Contact = () => {
         <div className="flex justify-around">
           <div className="flex flex-col">
             <div className="h-full pr-6">
-              <p className="mt-3 mb-12 text-lg md:text-2xl text-gray-600 dark:text-slate-400">
-                La Universidad de la Sierra Juárez es un organismo público
-                descentralizado del gobierno del estado de Oaxaca.
+              <p className="mt-3 mb-12 text-xl md:text-2xl text-gray-600 dark:text-unsij_white text-center">
+                La Universidad de la Sierra Juárez es un organismo público descentralizado del gobierno del estado de Oaxaca.
               </p>
               <ul className="mb-6 md:mb-0 flex flex-col md:flex-row justify-around">
                 <li className="flex">
@@ -74,13 +73,13 @@ const Contact = () => {
                       <a href="https://www.facebook.com/UNSIJ.SUNEO/?locale=es_LA"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-unsij_white text-3xl hover:text-unsij_fifth">
+                        className="text-orange-600 text-3xl hover:text-unsij_fifth">
                         <FaFacebookF />
                       </a>
                       <a href="https://www.unsij.edu.mx/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-unsij_white text-3xl hover:text-unsij_fifth">
+                        className="text-orange-600 text-3xl hover:text-unsij_fifth">
                         <TbWorldWww />
                       </a>
                     </div>

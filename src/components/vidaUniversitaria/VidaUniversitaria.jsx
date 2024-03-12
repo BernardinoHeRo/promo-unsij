@@ -40,7 +40,7 @@ const ImageGallery = () => {
     };
     return (
         <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-2 bg-transparent">
-            <h1 className=" mt-4 text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-3 text-unsij_white">Vida
+            <h1 className=" mt-4 text-center font-bold mb-3 text-unsij_white text-2xl md:text-3xl lg:text-4xl">Vida
                 universitaria</h1>
             <div className="-m-1 flex flex-wrap md:-m-2">
                 <div className="flex w-1/2 flex-wrap">

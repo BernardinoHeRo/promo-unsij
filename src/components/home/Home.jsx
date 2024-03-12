@@ -18,7 +18,7 @@ const Home = () => {
             <SubHeader/>
             <div className="bg-unsij_secod flex justify-center font-Garamont" id="proceso">
                 <span
-                    className="pt-4 text-unsij_white text-2xl md:text-3xl font-[800] pb-3">Proceso de admisión 2024</span>
+                    className="pt-4 text-unsij_white font-[800] pb-3 text-2xl md:text-3xl lg:text-4xl">Proceso de admisión 2024</span>
             </div>
             <div className="border-solid border-unsij_fisrt border-4">
                 <AdmisionProcess/>
@@ -26,7 +26,7 @@ const Home = () => {
             <Element name="oferta">
                 <div id="oferta"
                      className="pt-2 flex flex-col items-center bg-[#033F4A] border-4 border-unsij_secod rounded-b-3xl !overflow-x-hidden">
-                    <span className="w-full text-xl md:text-4xl font-Garamont font-[800] text-white mb-3 text-center">Oferta educativa: Licenciaturas</span>
+                    <span className="w-full font-Garamont font-[800] text-white mb-3 text-center text-2xl md:text-3xl lg:text-4xl">Oferta educativa</span>
                     <LicenciaturaPrograms/>
                 </div>
             </Element>

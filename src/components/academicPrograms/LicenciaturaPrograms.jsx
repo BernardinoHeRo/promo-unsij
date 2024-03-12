@@ -38,7 +38,7 @@ const LicenciaturaPrograms = () => {
         {
             id: 3,
             "infoColor": "#023E73",
-            nombre: 'Desarrollo de software y sistemas inteligentes',
+            nombre: 'Ingeniería Desarrollo de Software y Sistemas Inteligentes',
             informacion: 'Forma líderes analíticos y emprendedores capaces de desarrollar sistemas, administrar recursos informáticos y contribuir al cambio tecnológico. Únete para transformar el futuro.',
             imagen: informaticaImage,
             facebook: "https://www.facebook.com/InformaticaUNSIJ/?locale=es_LA",
@@ -85,7 +85,7 @@ const LicenciaturaPrograms = () => {
         if (autoScroll) {
             intervalId = setInterval(() => {
                 handleNextProgram();
-            }, 3000); // Ajusta el valor para la velocidad del recorrido automático
+            }, 5000); // Ajusta el valor para la velocidad del recorrido automático
         }
 
         // Limpiar el intervalo al desmontar el componente
@@ -144,7 +144,7 @@ const LicenciaturaPrograms = () => {
             {/* Mapear y mostrar las licenciaturas */}
             {displayedPrograms.map((programa, index) => (
                 <div key={programa.id}
-                     className={`mt-10 px-6 pt-16 pb-20 shadow-2xl shadow-black/[0.1] rounded-3xl flex flex-col justify-between
+                     className={`mt-10 px-6 pt-16 pb-20 shadow-2xl shadow-black/[0.1] rounded-3xl flex flex-col justify-around
                     min-w-[200px] max-w-[300px] md:max-w-[330px] 
                     min-h-[450px] max-h-[450px] md:max-h-[500px] 
                     transition-all duration-500 ease-in-out transform ${
@@ -155,10 +155,10 @@ const LicenciaturaPrograms = () => {
                          className="shadow-lg shadow-white/[0.2] rounded-3xl min-h-60 max-h-60 min-w-75 max-w-75 mx-1 -mt-40 transition-transform duration-300 ease-in-out transform"
                          style={{userSelect: 'none'}} alt="avatar"/>
                     {/* Título y contenido de la licenciatura */}
-                    <h1 className="mt-4 text-xl font-bold text-slate-800 dark:text-white text-center" style={{userSelect: 'none'}}>{programa.nombre}</h1>
-                    <hr className="mt-2 w-full mx-auto"/>
-                    <p className="mt-6 text-unsij_white text-justify text-[13px] md:text-[16px]" style={{userSelect: 'none'}}>{programa.informacion}</p>
-                    <hr className="mt-5 w-[100%] mx-auto"/>
+                    <h1 className="mt-2 font-bold text-slate-800 dark:text-white text-center text-xl" style={{userSelect: 'none'}}>{programa.nombre}</h1>
+                    <hr className="mt-1 w-full mx-auto"/>
+                    <p className="mt-2 text-unsij_white text-justify text-base " style={{userSelect: 'none'}}>{programa.informacion}</p>
+                    <hr className="mt-2 w-[100%] mx-auto"/>
                     {/* Enlaces a Facebook y Más Información */}
                     <div className="mt-6 flex justify-around">{programa.facebook && (
                         <a href={programa.facebook} target="_blank" rel="noopener noreferrer"
