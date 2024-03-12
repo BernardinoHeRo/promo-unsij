@@ -17,16 +17,17 @@ const Home = () => {
             <Header/>
             <SubHeader/>
             <div className="bg-unsij_secod flex justify-center font-Garamont" id="proceso">
-                <span
-                    className="pt-4 text-unsij_white font-[800] pb-3 text-2xl md:text-3xl lg:text-4xl">Proceso de admisión 2024</span>
+                <span className="pt-4 text-unsij_white font-[800] pb-3 text-2xl md:text-3xl lg:text-4xl">Proceso de admisión 2024</span>
             </div>
-            <div className="border-solid border-unsij_fisrt border-4">
+            <div className="p-4 bg-unsij_white">
                 <AdmisionProcess/>
             </div>
             <Element name="oferta">
                 <div id="oferta"
-                     className="pt-2 flex flex-col items-center bg-[#033F4A] border-4 border-unsij_secod rounded-b-3xl !overflow-x-hidden">
-                    <span className="w-full font-Garamont font-[800] text-white mb-3 text-center text-2xl md:text-3xl lg:text-4xl">Oferta educativa</span>
+                     className="bg-[#033F4A] flex justify-center font-Garamont">
+                    <span className="pt-4 text-unsij_white font-[800] pb-3 text-2xl md:text-3xl lg:text-4xl">Oferta educativa</span>
+                </div>
+                <div className="p-4 bg-gray-300 w-[90%] mx-auto my-2 rounded-3xl">
                     <LicenciaturaPrograms/>
                 </div>
             </Element>

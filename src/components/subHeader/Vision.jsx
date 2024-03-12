@@ -9,7 +9,7 @@ const Vision = () => {
                 <strong className="font-bold text-base md:text-5xl pl-7">Visión</strong>
             </div>
             <div className="w-[70%] md:w-[70%] lg:w-[82%] ml-2 lg:ml-4 mx-auto">
-                <p className="text-[13px] md:text-xl lg:text-3xl text-center">
+                <p className="text-base md:text-xl lg:text-2xl text-center">
                     Consolidarse como una Universidad de calidad en educación superior, comprometida con la excelencia
                     académica, líder en el desarrollo científico, tecnológico y cultural, con reconocimiento nacional e internacional.
                 </p>

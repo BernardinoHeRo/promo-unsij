@@ -144,21 +144,27 @@ const LicenciaturaPrograms = () => {
             {/* Mapear y mostrar las licenciaturas */}
             {displayedPrograms.map((programa, index) => (
                 <div key={programa.id}
-                     className={`mt-10 px-6 pt-16 pb-20 shadow-2xl shadow-black/[0.1] rounded-3xl flex flex-col justify-around
+                     className={`mt-14 px-6 pt-16 pb-20 shadow-2xl shadow-black/[0.1] rounded-3xl flex flex-col justify-around
                     min-w-[200px] max-w-[300px] md:max-w-[330px] 
                     min-h-[450px] max-h-[450px] md:max-h-[500px] 
                     transition-all duration-500 ease-in-out transform ${
                          index === 0 ? "translate-x-0" : `translate-x-${index * 2}0%`
                      }`} style={{backgroundColor: programa.infoColor}}>
+
+
                     {/* Imagen de la licenciatura */}
                     <img src={programa.imagen}
                          className="shadow-lg shadow-white/[0.2] rounded-3xl min-h-60 max-h-60 min-w-75 max-w-75 mx-1 -mt-40 transition-transform duration-300 ease-in-out transform"
                          style={{userSelect: 'none'}} alt="avatar"/>
+
+
                     {/* Título y contenido de la licenciatura */}
                     <h1 className="mt-2 font-bold text-slate-800 dark:text-white text-center text-xl" style={{userSelect: 'none'}}>{programa.nombre}</h1>
                     <hr className="mt-1 w-full mx-auto"/>
                     <p className="mt-2 text-unsij_white text-justify text-base " style={{userSelect: 'none'}}>{programa.informacion}</p>
                     <hr className="mt-2 w-[100%] mx-auto"/>
+
+
                     {/* Enlaces a Facebook y Más Información */}
                     <div className="mt-6 flex justify-around">{programa.facebook && (
                         <a href={programa.facebook} target="_blank" rel="noopener noreferrer"

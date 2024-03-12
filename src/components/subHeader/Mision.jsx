@@ -8,7 +8,7 @@ const Mision = () => {
                 <strong className="font-bold text-base md:text-5xl pl-7">Misión</strong>
             </div>
             <div className="w-[70%] md:w-[70%] lg:w-[82%] ml-2 lg:ml-4 mx-auto">
-                <p className="text-[15px] md:text-2xl lg:text-4xl text-center">
+                <p className="text-base md:text-xl lg:text-2xl text-center">
                     Impartir educación superior en los niveles de Licenciatura, Maestría y Doctorado formando
                     profesionales e investigadores altamente capacitados, para contribuir al desarrollo de la
                     investigación, educación superior, independencia económica, científica, tecnológica y cultural del
