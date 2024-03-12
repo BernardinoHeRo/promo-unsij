@@ -30,12 +30,16 @@ const Home = () => {
                     <LicenciaturaPrograms/>
                 </div>
             </Element>
-            <div id="becas">
-                <Becas/>
-            </div>
-            <div id="vidaUniversitaria" className="bg-[#033F4A]">
-                <VidaUniversitaria/>
-            </div>
+            <Element name="becas">
+                <div id="becas">
+                    <Becas/>
+                </div>
+            </Element>
+            <Element name="vidaUniversitaria">
+                <div id="vidaUniversitaria" className="bg-[#033F4A]">
+                    <VidaUniversitaria/>
+                </div>
+            </Element>
             <Element name="contact">
                 <Contact/>
             </Element>
