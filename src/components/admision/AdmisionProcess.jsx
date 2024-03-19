@@ -290,7 +290,7 @@ const AdmisionProcess = ({processType}) => {
                         <div key={`${processType}-${index}`} className="cursor-pointer">
                             <div
                                 className={`flex items-center justify-center h-10 w-10 md:h-16 md:w-16 lg:w-24 lg:h-24 rounded-full bg-unsij_main_0 text-3xl text-white font-semibold ${
-                                    activeStep === index ? "bg-unsij_fourth" : ""
+                                    activeStep === index ? "bg-red-600" : ""
                                 }`}
                                 onClick={() => handleStepClick(index)}
                             >
