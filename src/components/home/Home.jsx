@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import Header from "../header/Header.jsx";
 import AdmisionProcess from "../admision/AdmisionProcess.jsx";
 import LicenciaturaPrograms from "../academicPrograms/LicenciaturaPrograms.jsx";
