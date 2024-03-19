@@ -39,9 +39,7 @@ const ImageGallery = () => {
         return aspectRatio * 80 + 'vw'; // Ajusta el valor multiplicador según tus necesidades
     };
     return (
-        <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-2 bg-transparent">
-            <h1 className=" mt-4 text-center font-bold mb-3 text-unsij_white text-2xl md:text-3xl lg:text-4xl">Vida
-                universitaria</h1>
+        <div className="m-4 w-[95%] lg:w-[65%] xl:w-[55%] mx-auto">
             <div className="-m-1 flex flex-wrap md:-m-2">
                 <div className="flex w-1/2 flex-wrap">
                     {images.slice(0, 4).map((imageSrc, index) => (
@@ -84,7 +82,7 @@ const ImageGallery = () => {
             >
                 <img
                     alt="gallery-fullscreen"
-                    className="block w-full h-auto mx-auto"
+                    className="block w-[98%] h-auto mx-auto"
                     src={selectedImage}
                     style={{maxHeight: `${imageDimensions.height}px`}}
                 />

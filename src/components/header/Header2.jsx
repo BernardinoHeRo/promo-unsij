@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Header2 = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <header className="flex items-center justify-between xl:justify-start w-full p-4 h-[10vh] bg-unsij_fisrt z-50 font-Garamont">
+    <header className="flex items-center justify-between xl:justify-start w-full p-4 h-[10vh] bg-unsij_main_0 z-50 font-Garamont">
       <div className="xl:w-1/3">
         <Link to={"/"} className="flex justify-around items-center">
           <img
@@ -23,7 +23,7 @@ const Header2 = () => {
         </Link>
       </div>
       <nav
-        className={`fixed bg-unsij_secod rounded-xl xl:w-full w-[80%] md:w-[50%] h-full ${
+        className={`fixed bg-unsij_main_0 rounded-xl xl:w-full w-[80%] md:w-[50%] h-full ${
           showMenu ? "left-0" : "-left-full"
         } top-0 xl:static flex-1 flex 
                 flex-col xl:flex-row items-center justify-center lg:justify-end gap-6 md:gap-7 lg:gap-10 transition-all duration-500 z-50`}

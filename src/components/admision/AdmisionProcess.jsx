@@ -30,8 +30,8 @@ const AdmisionProcess = ({processType}) => {
                                         <li>
                                             <h1 className='text-lg md:text-xl lg:text-2xl mb-2 font-bold'>Inscripción al curso
                                                 propedéutico</h1>
-                                            <spa className="text-base md:text-lg lg:text-xl">Del 15 al 26 de julio del 2024
-                                            </spa>
+                                            <span className="text-base md:text-lg lg:text-xl">Del 15 al 26 de julio del 2024
+                                            </span>
                                         </li>
                                         <li>
                                             <h1 className='text-lg md:text-xl lg:text-2xl mb-2 font-bold'>Duración del curso
@@ -289,8 +289,8 @@ const AdmisionProcess = ({processType}) => {
                     {stepsData.map((step, index) => (
                         <div key={`${processType}-${index}`} className="cursor-pointer">
                             <div
-                                className={`flex items-center justify-center h-10 w-10 md:h-16 md:w-16 lg:w-24 lg:h-24 rounded-full bg-unsij_secod text-3xl text-white font-semibold ${
-                                    activeStep === index ? "bg-unsij_sixth" : ""
+                                className={`flex items-center justify-center h-10 w-10 md:h-16 md:w-16 lg:w-24 lg:h-24 rounded-full bg-unsij_main_0 text-3xl text-white font-semibold ${
+                                    activeStep === index ? "bg-unsij_fourth" : ""
                                 }`}
                                 onClick={() => handleStepClick(index)}
                             >
@@ -302,9 +302,9 @@ const AdmisionProcess = ({processType}) => {
 
                 {activeStep !== null && (
                     <div className="mt-2 bg-gray-300 p-5 rounded-3xl">
-                        <h4 className="text-center">
+                        <div className="text-center">
                             {stepsData[activeStep].title}
-                        </h4>
+                        </div>
                         <ul className="leading-6 text-gray-500">
                             {Object.entries(stepsData[activeStep].description).map(([key, value]) => (
                                 <li key={key}>

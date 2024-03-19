@@ -9,7 +9,7 @@ const Contact = () => {
         "https://www.google.com/maps?q=17.316073660409202,-96.4833219216453";
 
     return (
-        <section className="bg-unsij_secod" id="contact">
+        <section className="bg-unsij_main_0" id="contact">
             <div className="mx-auto w-full px-4 pt-4 sm:px-4 lg:px-10 lg:pt-10">
                 <div className="mb-6 w-full text-center sm:text-center md:mx-auto md:mb-12">
                     <h2 className="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-2xl md:text-3xl lg:text-4xl">
