@@ -7,30 +7,9 @@ import Footer from "../footer/Footer.jsx";
 import Becas from '../becas/Becas'
 import VidaUniversitaria from "../vidaUniversitaria/VidaUniversitaria";
 import SubHead from "../subHeader/SubHead";
-import {Link} from "react-router-dom";
 
 
 const Home = () => {
-    const [firstDivHeight, setFirstDivHeight] = useState(0);
-    const [secondDivHeight, setSecondDivHeight] = useState(0);
-    useEffect(() => {
-        const resizeHandler = () => {
-            const firstDivHeight = document.getElementById('proceso').offsetHeight;
-            const windowHeight = window.innerHeight;
-            const secondDivHeight = windowHeight - firstDivHeight;
-            setFirstDivHeight(firstDivHeight);
-            setSecondDivHeight(secondDivHeight);
-        };
-
-        resizeHandler();
-
-        window.addEventListener('resize', resizeHandler);
-
-        return () => {
-            window.removeEventListener('resize', resizeHandler);
-        };
-    }, []);
-
     return (
         <div>
             <Header/>
