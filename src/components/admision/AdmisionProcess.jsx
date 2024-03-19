@@ -3,11 +3,12 @@ import React, {useState} from "react";
 const AdmisionProcess = ({processType}) => {
         const [activeStep, setActiveStep] = useState(0);
 
-        const handleStepClick = (step) => {
-            setActiveStep(activeStep === step ? null : step);
-        };
+    const handleStepClick = (step) => {
+        setActiveStep(activeStep === step ? null : step);
+    };
 
-        const getStepsData = () => {
+
+    const getStepsData = () => {
                 const licenciaturaSteps = [
                     {
                         title: (
@@ -285,11 +286,11 @@ const AdmisionProcess = ({processType}) => {
                         Costo de ficha {" "} <strong className="font-bold text-xl md:text-3xl">$239 MXN</strong>
                     </span>
                 </div>
-                <div className="flex justify-around mt-8" style={{fontSize: "0.8rem"}}>
+                <div className="flex justify-center gap-8 md:gap-16 lg:gap-32 mt-8">
                     {stepsData.map((step, index) => (
                         <div key={`${processType}-${index}`} className="cursor-pointer">
                             <div
-                                className={`flex items-center justify-center h-10 w-10 md:h-16 md:w-16 lg:w-24 lg:h-24 rounded-full bg-unsij_main_0 text-3xl text-white font-semibold ${
+                                className={`flex items-center justify-center h-10 md:h-20 w-10 md:w-20 rounded-full bg-green-950 text-3xl text-white font-semibold ${
                                     activeStep === index ? "bg-red-600" : ""
                                 }`}
                                 onClick={() => handleStepClick(index)}
